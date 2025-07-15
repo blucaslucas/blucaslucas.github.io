@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucas M | Personal Website</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>Lucas M</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#music">Music & Art</a></li>
+        <li><a href="#tutoring">Tutoring</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        Welcome! I'm Lucas M, a passionate researcher, developer, musician, and
+        tutor. This is my space to share who I am and what I do.
+      </p>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education & Work Experience</h2>
+      <ul>
+        <li><strong>BSc Computer Science</strong> – University Name (Year)</li>
+        <li><strong>Software Intern</strong> – Company Name (Year)</li>
+      </ul>
+    </section>
+
+    <section id="research" class="section">
+      <h2>Academic Research & Publications</h2>
+      <ul>
+        <li>"Title of Paper" – Journal Name, 2023</li>
+        <li>"Another Paper Title" – Conference Name, 2024</li>
+      </ul>
+    </section>
+
+    <section id="music" class="section">
+      <h2>Music & Art</h2>
+      <p>Here's a sample of my music and artwork:</p>
+      <audio controls>
+        <source src="assets/audio/sample.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <img
+        src="assets/images/placeholder.jpg"
+        alt="Sample Artwork"
+        class="artwork"
+      />
+    </section>
+
+    <section id="tutoring" class="section">
+      <h2>Tutoring Services</h2>
+      <p>
+        I offer tutoring in computer science, math, and exam prep. Reach out if
+        you're interested!
+      </p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/yourID" method="POST">
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+          autocomplete="name"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+          autocomplete="email"
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Lucas M</p>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("nav-links-visible");
+      navToggle.classList.toggle("nav-toggle-active");
+    });
+  </script>
+</body>
+</html>
+
