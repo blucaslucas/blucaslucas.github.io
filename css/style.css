@@ -85,3 +85,62 @@ button {
 button:hover {
   background-color: var(--blue-dark);
 }
+
+#site-header {
+  background-color: var(--blue);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: top 0.3s;
+  overflow-x: hidden;
+}
+
+.header-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-right: 1rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.divider {
+  margin: 0 1rem;
+  font-weight: normal;
+  color: var(--white);
+  opacity: 0.5;
+}
+
+.scrolling-nav {
+  overflow-x: auto;
+  white-space: nowrap;
+  flex: 1;
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scrolling-nav::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.nav-scroll {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-scroll a {
+  color: var(--white);
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-scroll a:hover {
+  color: var(--gold);
+}
