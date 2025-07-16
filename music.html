@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lucas Malatesta | Music & Art</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header id="site-header">
+        <h1>Lucas M</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="education.html">Education</a>
+          <a href="research.html">Research</a>
+          <a href="music.html">Music & Art</a>
+          <a href="tutoring.html">Tutoring</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+      <script>
+        let prevScrollPos = window.pageYOffset;
+        window.onscroll = function () {
+          const currentScrollPos = window.pageYOffset;
+          const header = document.getElementById("site-header");
+          if (prevScrollPos > currentScrollPos) {
+            header.style.top = "0";
+          } else {
+            header.style.top = "-80px";
+          }
+          prevScrollPos = currentScrollPos;
+        };
+      </script>
+      
+
+  <main>
+    <section>
+      <h2>Music & Art</h2>
+      <p>Explore samples of my creative work — music, visuals, and more.</p>
+    </section>
+  </main>
+
+  [Insert footer here]
+</body>
+</html>
